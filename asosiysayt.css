@@ -1,0 +1,466 @@
+/* General Styles */
+
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    color: #333;
+    background: linear-gradient(135deg, #f4f4f9, #0606df);
+}
+
+
+/* Navigatsiya Paneli */
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #007BFF;
+    padding: 15px 30px;
+    color: #fff;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+nav .logo {
+    font-size: 28px;
+    font-weight: bold;
+    color: #fff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+nav .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+    margin: 0;
+    padding: 0;
+}
+
+nav .nav-links li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 500;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+nav .nav-links li a:hover {
+    color: #ffdd57;
+    transform: translateY(-2px);
+}
+
+
+/* Dropdown menyu */
+
+.dropdown {
+    position: relative;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: rgb(15, 11, 245);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    z-index: 1;
+    min-width: 180px;
+    top: 30px;
+}
+
+.dropdown-content a {
+    color: #333;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    transition: background-color 0.3s ease;
+}
+
+.dropdown-content a:hover {
+    background-color: #961acf;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+
+/* Hero qismi */
+
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 100px 30px;
+    background: linear-gradient(135deg, #007BFF, #00bfff);
+    color: #fff;
+    overflow: hidden;
+}
+
+.hero-content {
+    max-width: 50%;
+    animation: fadeInLeft 1s ease-in-out;
+}
+
+.hero-content h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+    line-height: 1.2;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.hero-content p {
+    font-size: 18px;
+    margin-bottom: 30px;
+    opacity: 0.9;
+}
+
+.hero-content .btn {
+    background-color: #ff6f61;
+    color: #fff;
+    padding: 14px 28px;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    text-decoration: none;
+}
+
+.hero-content .btn:hover {
+    background-color: #ff4a3d;
+    transform: translateY(-3px);
+}
+
+.hero-gif {
+    animation: fadeInRight 1s ease-in-out;
+}
+
+.hero-gif img {
+    max-width: 100%;
+    border-radius: 15px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+
+/* Biz Haqimizda */
+
+
+.custom-link {
+    font-family: Arial, sans-serif; /* Shriftni o'zgartirish */
+    font-size: 50px; /* Shrift o'lchami */
+    color: blue; /* Matn rangi */
+    text-decoration: none; /* Tagidagi chiziqni olib tashlash */
+  }
+
+.about {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 100px 30px;
+    background-color: #fff;
+}
+
+.about-content {
+    max-width: 50%;
+    animation: fadeInUp 1s ease-in-out;
+}
+
+.about-content h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #007BFF;
+}
+
+.about-content p {
+    font-size: 16px;
+    line-height: 1.8;
+    color: #555;
+}
+
+.about-gif img {
+    max-width: 100%;
+    border-radius: 15px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+
+/* Xizmatlar */
+
+.services {
+    padding: 100px 30px;
+    background-color: #f1f1f1;
+    text-align: center;
+    text-decoration: none; /* Pastki chiziqni olib tashlash */
+    border-radius: 5px; /* Tugma burchaklarini yumaloqlash */
+    background: linear-gradient(135deg, white, rgb(8, 43, 240));
+}
+
+.services h2 {
+    font-size: 36px;
+    margin-bottom: 40px;
+    color: #007BFF;
+}
+
+.service-cards {
+    display: flex;
+    justify-content: space-around;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.card {
+    background-color: #fff;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    max-width: 300px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+}
+
+.card img {
+    max-width: 100%;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.card h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #007BFF;
+}
+
+.card p {
+    font-size: 14px;
+    color: #666;
+}
+
+
+/* Bo'limlar */
+
+.departments {
+    padding: 100px 30px;
+    background-color: #fff;
+    text-align: center;
+    background: linear-gradient(135deg, white, rgb(8, 43, 240));
+}
+
+.departments h2 {
+    font-size: 36px;
+    margin-bottom: 40px;
+    color: #007BFF;
+}
+
+.department-cards {
+    display: flex;
+    justify-content: space-around;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+
+/* Blog */
+
+.blog {
+    padding: 100px 30px;
+    background-color: #f1f1f1;
+    text-align: center;
+}
+
+.blog h2 {
+    font-size: 36px;
+    margin-bottom: 40px;
+    color: #007BFF;
+}
+
+.blog-posts {
+    display: flex;
+    justify-content: space-around;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.post {
+    background-color: #fff;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    max-width: 300px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.post:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+}
+
+.post img {
+    max-width: 100%;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.post h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #007BFF;
+}
+
+.post p {
+    font-size: 14px;
+    color: #666;
+}
+
+.post .read-more {
+    color: #007BFF;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.post .read-more:hover {
+    color: #0056b3;
+    text-decoration: underline;
+}
+
+
+/* Email obuna qismi */
+
+.email-container {
+    margin-top: 40px;
+    text-align: center;
+}
+
+.email-container input[type="email"] {
+    padding: 14px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 16px;
+    width: 300px;
+    margin-right: 10px;
+    transition: border-color 0.3s ease;
+}
+
+.email-container input[type="email"]:focus {
+    border-color: #007BFF;
+    outline: none;
+}
+
+.email-container .btn {
+    padding: 14px 28px;
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.email-container .btn:hover {
+    background-color: #0056b3;
+    transform: translateY(-3px);
+}
+
+
+/* Footer */
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 60px 30px;
+    text-align: center;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-around;
+    gap: 30px;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+}
+
+.footer-section h3 {
+    font-size: 24px;
+    margin-bottom: 15px;
+    color: #fff;
+}
+
+.footer-section p,
+.footer-section ul {
+    font-size: 14px;
+    color: #ccc;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin-bottom: 10px;
+}
+
+.footer-section ul li a {
+    color: #ccc;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-section ul li a:hover {
+    color: #ffdd57;
+}
+
+footer p {
+    margin-top: 20px;
+    font-size: 14px;
+    color: #ccc;
+}
+
+
+/* Animatsiyalar */
+
+@keyframes fadeInLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes fadeInRight {
+    from {
+        opacity: 0;
+        transform: translateX(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
